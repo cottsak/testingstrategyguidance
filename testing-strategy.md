@@ -4,7 +4,7 @@ This outline briefly describes how we write automated tests for our production a
 
 ## Why do we write tests for our code?
 
-> hWe’re not here to write tests. We’re here to deliver value.
+> We’re not here to write tests. We’re here to deliver value.
 
 “Deliver value” here means deliver product value. This roughly translates to writing Production Code, and not tests, where Production Code is only the minimum logic required to serve the product delivering value to its customer.
 
@@ -36,7 +36,7 @@ There is no silver bullet of course. However there is a type of test that can of
 
 Here is an example:
 
-[image]
+![example web-api sub-c test using xunit](https://raw.githubusercontent.com/cottsak/testingstrategyguidance/master/simple-webapi-subc-test.png)
 
 What you can’t see just from this image is that the test cuts a vertical slice though many layers of the system right down to the real database. A real entity is set up in the store. A HTTP request is made to delete the entity, and then a query is made against the store to verify that the entity no longer resides there. In this case we’re testing an API controller, a command, domain objects and persistence elements like ORM mapping and storage interaction. This test delivers a lot of confidence since it can be expressed in terms of a user story and ensures that nearly all pieces of the vertical slice are present and working for the ‘feature’ to be complete.
 
