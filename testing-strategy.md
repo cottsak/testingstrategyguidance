@@ -38,6 +38,8 @@ Here is an example:
 
 ![example web-api sub-c test using xunit](https://raw.githubusercontent.com/cottsak/testingstrategyguidance/master/simple-webapi-subc-test.png)
 
+(this example uses the Sub-C framework [ControllerTests](https://github.com/cottsak/ControllerTests))
+
 What you can’t see just from this image is that the test cuts a vertical slice though many layers of the system right down to the real database. A real entity is set up in the store. A HTTP request is made to delete the entity, and then a query is made against the store to verify that the entity no longer resides there. In this case we’re testing an API controller, a command, domain objects and persistence elements like ORM mapping and storage interaction. This test delivers a lot of confidence since it can be expressed in terms of a user story and ensures that nearly all pieces of the vertical slice are present and working for the ‘feature’ to be complete.
 
 ## So no Unit or UI tests then?
