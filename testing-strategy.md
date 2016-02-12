@@ -28,7 +28,7 @@ Cons: more moving parts == fragile; more complex; heavier to write / greater dev
 Pros: capture the full stack of the application and other external environment factors; deliver huge ROI covering many LOC  
 Cons: can be expensive to write, maintain, complex and in some cases brittle; usually there is a complex set up of the environment to make these work; often slow
 
-Often folks are quoted as saying that you should have fewer heaver/slower/high-value tests like UI automation tests and greater qualities of smaller/faster/low-value tests like Unit Tests. We don’t believe in this guidance since is rigid and complicated.
+Often folks are quoted as saying that you should have fewer heaver/slower/high-value tests like UI automation tests and greater qualities of smaller/faster/low-value tests like Unit Tests. We don’t believe in this guidance since it's rigid and complicated.
 
 ## So just give me confidence; where is the silver bullet?
 
